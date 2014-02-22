@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <VBox spacing="10.0">
+      <children>
+        <VBox spacing="10.0">
+          <children>
+            <Label text="Camera Coordinaten (in sm)" />
+            <Pane>
+              <children>
+                <Label layoutX="26.0"  text="X" />
+                <Label layoutX="107.0" text="Y" />
+                <Label layoutX="192.0" text="Z" />
+              </children>
+            </Pane>
+            <HBox spacing="10.0">
+              <children>
+                <TextField fx:id="cameraX" focusTraversable="false" prefWidth="70.0" />
+                <TextField fx:id="cameraY" focusTraversable="false" prefWidth="70.0" />
+                <TextField fx:id="cameraZ" prefWidth="70.0" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <HBox spacing="10.0">
+          <children>
+            <Label text="Marker Size (in sm)" />
+            <TextField fx:id="markerSize" prefWidth="70.0" />
+          </children>
+        </HBox>
+        <Label text="Marker Coordinate (in px on image)" />
+        <Pane>
+          <children>
+            <Label layoutX="54.0" text="X" />
+            <Label layoutX="138.0" text="Y" />
+          </children>
+        </Pane>
+        <HBox spacing="10.0">
+          <children>
+            <Label text="A" />
+            <TextField fx:id="aX" prefWidth="70.0" />
+            <TextField fx:id="aY" focusTraversable="false" prefWidth="70.0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox spacing="10.0">
+          <children>
+            <Label text="B" />
+            <TextField fx:id="bX" prefWidth="70.0" />
+            <TextField fx:id="bY" focusTraversable="false" prefWidth="70.0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox spacing="10.0">
+          <children>
+            <Label text="C" />
+            <TextField fx:id="cX" prefWidth="70.0" />
+            <TextField fx:id="cY" focusTraversable="false" prefWidth="70.0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox spacing="10.0">
+          <children>
+            <Label text="D" />
+            <TextField fx:id="dX" prefWidth="70.0" />
+            <TextField fx:id="dY" focusTraversable="false" prefWidth="70.0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+      </children>
+      <padding>
+        <Insets left="10.0" top="10.0" />
+      </padding>
+    </VBox>
+    <Canvas fx:id="canvas" height="600.0" width="800.0" />
+  </children>
+</HBox>
